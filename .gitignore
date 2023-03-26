@@ -40,5 +40,3 @@ packages/react-devtools-timeline/dist
 .parcel-cache/
 
 package-lock.json
-
-dist/
