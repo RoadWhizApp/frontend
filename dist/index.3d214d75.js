@@ -10960,12 +10960,13 @@ function LandingPage(props) {
     const fetchClientData = ()=>{
         if (clientId) (0, _axiosDefault.default).post(baseURL, {
             // Example "Customer_ID": "000006"
-            "Customer_ID": clientId
+            Customer_ID: clientId
         }).then((response)=>{
             setClientData(response.data);
             setClientInfo(response.data);
         });
     };
+    console.log("clientData", clientData);
     const history = (0, _reactRouterDom.useHistory)();
     (0, _reactDefault.default).useEffect(()=>{
         if (clientData) history.push("/desktop-1");
@@ -10988,7 +10989,7 @@ function LandingPage(props) {
                         alt: "Rectangle 1"
                     }, void 0, false, {
                         fileName: "components/LandingPage/index.jsx",
-                        lineNumber: 52,
+                        lineNumber: 58,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -10996,7 +10997,7 @@ function LandingPage(props) {
                         children: title
                     }, void 0, false, {
                         fileName: "components/LandingPage/index.jsx",
-                        lineNumber: 53,
+                        lineNumber: 59,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -11010,19 +11011,19 @@ function LandingPage(props) {
                             alt: "Logo Shapes 7"
                         }, void 0, false, {
                             fileName: "components/LandingPage/index.jsx",
-                            lineNumber: 55,
+                            lineNumber: 64,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "components/LandingPage/index.jsx",
-                        lineNumber: 54,
+                        lineNumber: 60,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "rectangle-32"
                     }, void 0, false, {
                         fileName: "components/LandingPage/index.jsx",
-                        lineNumber: 57,
+                        lineNumber: 70,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -11031,7 +11032,7 @@ function LandingPage(props) {
                         alt: "Mesh-08"
                     }, void 0, false, {
                         fileName: "components/LandingPage/index.jsx",
-                        lineNumber: 58,
+                        lineNumber: 71,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -11039,7 +11040,7 @@ function LandingPage(props) {
                         children: customerId
                     }, void 0, false, {
                         fileName: "components/LandingPage/index.jsx",
-                        lineNumber: 59,
+                        lineNumber: 72,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -11051,7 +11052,7 @@ function LandingPage(props) {
                         required: true
                     }, void 0, false, {
                         fileName: "components/LandingPage/index.jsx",
-                        lineNumber: 60,
+                        lineNumber: 75,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -11060,23 +11061,23 @@ function LandingPage(props) {
                         children: login
                     }, void 0, false, {
                         fileName: "components/LandingPage/index.jsx",
-                        lineNumber: 61,
+                        lineNumber: 83,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "components/LandingPage/index.jsx",
-                lineNumber: 51,
+                lineNumber: 54,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "components/LandingPage/index.jsx",
-            lineNumber: 50,
+            lineNumber: 53,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "components/LandingPage/index.jsx",
-        lineNumber: 49,
+        lineNumber: 52,
         columnNumber: 5
     }, this);
 }

@@ -38,6 +38,8 @@ function LandingPage(props) {
     }
   };
 
+  console.log('clientData', clientData)
+
   const history = useHistory();
 
   React.useEffect(() => {
